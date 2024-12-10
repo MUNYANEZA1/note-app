@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Note App</title>
+    <link rel="stylesheet" href="assests/css/styles.css" />
+    <!-- Include jsPDF library for PDF export -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <!-- Include FileSaver.js for Word and JSON export -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+  </head>
+  <body>
+    <div class="app-container">
+      <header>
+        <h1>My Note App</h1>
+      </header>
+
+      <section class="note-form">
+        <input id="note-title" type="text" placeholder="Note Title" />
+        <textarea id="note-content" placeholder="Note Content"></textarea>
+        <input
+          id="note-tags"
+          type="text"
+          placeholder="Tags (comma separated)"
+        />
+        <div class="form-actions">
+          <button id="save-note">Save Note</button>
+          <button id="clear-form">Clear</button>
+        </div>
+      </section>
+
+      <section class="note-actions">
+        <input id="search-input" type="text" placeholder="Search Notes..." />
+        <button id="filter-tags-btn">Filter by Tags</button>
+        <button id="toggle-theme">Toggle Dark Mode</button>
+        <button id="export-notes">Export Notes</button>
+      </section>
+
+      <section id="notes-container"></section>
+    </div>
+
+    <script src="assests/js/scripts.js"></script>
+  </body>
+</html>
